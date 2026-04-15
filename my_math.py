@@ -28,3 +28,41 @@ def sqrt(x):
 
     return (low + high) / 2
 
+"""Function Name - Factorial 
+Calculates the factorial of the number as long as it is non negative
+Factorial is the product of all positive numbers from 1 up to the number
+(num) is the parameter that is the factorial being calculated
+return value - int: the factorial of the input number (num)
+
+Error Check - TypeRaise - checks if the input is not integer
+Value Error - Checks if input is negative
+"""
+
+def factorial(num):
+        if not isinstance(num,int):
+            raise TypeError("Input has to be an integer")
+        if num < 0:
+            raise ValueError("Factorial does not exist for negative numbers")
+        
+        if num == 0:
+            return 1
+        
+        fact = 1
+        for i in range(1, num+1):
+            fact *=i
+        
+        return fact
+
+
+def main():
+    raw = input("Enter a number for its factorial: ")
+
+    try:
+        num = int(raw)
+        print(factorial(num))
+    except (ValueError, TypeError) as x:
+        print(x)
+
+
+if __name__ == "__main__":
+    main()
