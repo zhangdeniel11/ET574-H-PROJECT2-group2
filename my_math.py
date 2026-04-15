@@ -1,4 +1,6 @@
 
+# Core Function by Musfira
+
 """
 Function Name: sqrt
 Purpose: Compute the square root of a non-negative number x without using the math module.
@@ -27,6 +29,36 @@ def sqrt(x):
             low = mid
 
     return (low + high) / 2
+
+# Original Function by Musfira
+
+"""
+Function Name: area_of_triangle
+Purpose: Compute the area of a triangle using Heron's formula.
+Parameters:
+        a (float): Length of side a (must be positive)
+        b (float): Length of side b (must be positive)
+        c (float): Length of side c (must be positive)
+Return Value:
+    float: The area of the triangle, or None if the sides do not form a valid triangle.
+"""
+
+def area_of_triangle(a, b, c):
+
+    # All sides must be positive
+    if a <= 0 or b <= 0 or c <= 0:
+        return None
+
+    # Triangle inequality check
+    if a + b <= c or a + c <= b or b + c <= a:
+        return None
+
+    # Semi-perimeter
+    s = (a + b + c) / 2
+
+    #formula
+    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+    return area
 
 """Function Name - Factorial 
 Calculates the factorial of the number as long as it is non negative
