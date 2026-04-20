@@ -1,7 +1,7 @@
 ID,TYPE,COMMIT,STATUS,DESCRIPTION,REPORTER,ASSIGNEE,DUE,CREATED,RESOLVED
 1,my_math,eb58e92,closed,Musfira's 1st Funtion Created,,Musfira Waseem,04/24,04/15,04/15
-2,inital_commit,38176f3,closed,creating repository,Deniel,Deniel,4/24,4/15,4/15
-3,Function_factorial,e21024f,closed,factorial function,deniel,deniel,4/24,4/15,4/15
+2,inital_commit,38176f3,closed,creating repository,,Deniel,4/24,4/15,4/15
+3,Function_factorial + test function,e21024f,closed,factorial function,,deniel,4/24,4/15,4/15
 4,my_math,8b3030b,closed,Musfira's Original Function,,Musfira Waseem,04/24,04/15,04/15
 5,test_math,3f91d3f,closed,Test Cases by MUsfira for Musfria's Core F,,Musfira Waseem,04/24,04/15,04/15
-
+6,Original function, area of triangle,ee74430,,closed, Deniel Orignal function + test function for Musfira SQRT function,,Deniel,4/24,4/20,4/20
