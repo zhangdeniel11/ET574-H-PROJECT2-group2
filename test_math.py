@@ -1,6 +1,6 @@
 
 import unittest
-
+#Deniel Test Case for Factorial Function
 from my_math import factorial, sqrt
 
 def test_factorial1():
@@ -29,3 +29,15 @@ def test_sqrt_edge():
 def test_sqrt_invalid():
 
     assert sqrt(-1) is None
+
+#Deniel test case for Musfira SQRT function
+def test_sqrt_typical_deniel():
+    result = sqrt(25)
+    assert abs(result -5) < 0.0001
+
+def test_sqrt_edge_deniel():
+    assert sqrt(0) == 0
+    assert sqrt(1) == 1
+
+def test_sqrt_invalid_deniel():
+    assert sqrt(-4) is None

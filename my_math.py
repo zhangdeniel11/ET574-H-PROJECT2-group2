@@ -60,6 +60,7 @@ def area_of_triangle(a, b, c):
     area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
     return area
 
+#Core Function - Deniel
 """Function Name - Factorial 
 Calculates the factorial of the number as long as it is non negative
 Factorial is the product of all positive numbers from 1 up to the number
@@ -98,3 +99,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+#Original Function - Deniel
+"""Function Name - Triangle Area
+Calculates the area of a triangle given its base and height
+Paramters - Takes in Base and Height of the triangle, must be either int or float and must be non negative
+return value - float: the area of the triangle
+Type Error - checks if the input is not a number
+Value Error - checks if the input is negative"""
+def triangle_area(base,height):
+    if not isinstance(base, (int, float)) or not isinstance(height, (int, float)):
+        raise TypeError("Base and height must be numbers")
+    if base < 0 or height < 0:
+        raise ValueError("Base and height must be non-negative")
+
+    return 0.5 * base * height
+
+if __name__ == "__main__":
+    base = float(input("Enter the base of the triangle: "))
+    height = float(input("Enter the height of the triangle: "))
+    
+    print("Area of the triangle is:", triangle_area(base, height))
