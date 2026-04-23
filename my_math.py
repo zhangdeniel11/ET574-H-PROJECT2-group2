@@ -87,19 +87,6 @@ def factorial(num):
         return fact
 
 
-def main():
-    raw = input("Enter a number for its factorial: ")
-
-    try:
-        num = int(raw)
-        print(factorial(num))
-    except (ValueError, TypeError) as x:
-        print(x)
-
-
-if __name__ == "__main__":
-    main()
-
 
 #Original Function - Deniel
 """Function Name - Triangle Area
@@ -112,7 +99,7 @@ def triangle_area(base,height):
     if not isinstance(base, (int, float)) or not isinstance(height, (int, float)):
         raise TypeError("Base and height must be numbers")
     if base < 0 or height < 0:
-        raise ValueError("Base and height must be non-negative")
+        raise ValueError("Base and height must be non negative")
 
     return 0.5 * base * height
 
@@ -121,15 +108,3 @@ if __name__ == "__main__":
     height = float(input("Enter the height of the triangle: "))
     
     print("Area of the triangle is:", triangle_area(base, height))
-
-
-
-# Kunga - Core Function
-def abs_val(x):
-    if x < 0:
-        return -x
-    return x
-
-# Kunga - Original Function
-def area_of_circle(r):
-    return 3.14 * r * r
