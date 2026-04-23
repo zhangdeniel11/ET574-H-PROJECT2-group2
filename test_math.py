@@ -1,7 +1,7 @@
 
 import unittest
 #Deniel Test Case for Factorial Function
-from my_math import factorial, sqrt
+from my_math import factorial, sqrt, triangle_area
 
 def test_factorial1():
     assert factorial(5) == 120
@@ -53,3 +53,19 @@ def test_abs_val_kunga():
 def test_area_of_circle_kunga():
     assert area_of_circle(1) == 3.14
     assert area_of_circle(2) == 12.56
+
+# Test cases by Musfira for Daniel's Original Function
+
+def test_triangle_area_typical():
+    assert triangle_area(10, 5) == 25.0
+
+def test_triangle_area_edge_zero():
+    assert triangle_area(0, 5) == 0
+    assert triangle_area(5, 0) == 0
+
+def test_triangle_area_invalid_negative():
+    try:
+        triangle_area(-3, 4)
+        assert False
+    except ValueError:
+        assert True
