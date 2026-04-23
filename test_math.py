@@ -1,7 +1,7 @@
 
 import unittest
 #Deniel Test Case for Factorial Function
-from my_math import factorial, sqrt, triangle_area
+from my_math import factorial, sqrt, triangle_area, area_of_triangle
 
 def test_factorial1():
     assert factorial(5) == 120
@@ -69,3 +69,20 @@ def test_triangle_area_invalid_negative():
         assert False
     except ValueError:
         assert True
+
+# Musfira's Original function test Cases by Musfira
+
+def test_area_triangle_typical():
+    result = area_of_triangle(3, 4, 5)
+    assert abs(result - 6) < 0.0001   # Heron's formula → area = 6
+
+def test_area_triangle_edge():
+    result = area_of_triangle(0.1, 0.1, 0.1)
+    assert result is not None
+
+def test_area_triangle_invalid_negative():
+    assert area_of_triangle(-3, 4, 5) is None
+
+def test_area_triangle_invalid_inequality():
+    assert area_of_triangle(1, 2, 3) is None
+
