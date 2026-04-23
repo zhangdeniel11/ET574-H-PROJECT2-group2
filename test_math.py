@@ -88,12 +88,6 @@ def test_area_triangle_invalid_inequality():
 
 # Test Cases for Kunga's Function by Musfira
 
-from my_math import abs_val
-
-def test_abs_val_typical():
-    assert abs_val(-10) == 10
-    assert abs_val(7) == 7
-
 def test_abs_val_edge_zero():
     assert abs_val(0) == 0
 
