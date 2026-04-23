@@ -121,3 +121,15 @@ if __name__ == "__main__":
     height = float(input("Enter the height of the triangle: "))
     
     print("Area of the triangle is:", triangle_area(base, height))
+
+
+
+# Kunga - Core Function
+def abs_val(x):
+    if x < 0:
+        return -x
+    return x
+
+# Kunga - Original Function
+def area_of_circle(r):
+    return 3.14 * r * r

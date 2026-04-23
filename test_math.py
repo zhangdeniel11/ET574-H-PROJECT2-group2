@@ -41,3 +41,15 @@ def test_sqrt_edge_deniel():
 
 def test_sqrt_invalid_deniel():
     assert sqrt(-4) is None
+
+# Kunga test cases""" """  """ """
+
+from my_math import abs_val, area_of_circle
+
+def test_abs_val_kunga():
+    assert abs_val(-5) == 5
+    assert abs_val(10) == 10
+
+def test_area_of_circle_kunga():
+    assert area_of_circle(1) == 3.14
+    assert area_of_circle(2) == 12.56
