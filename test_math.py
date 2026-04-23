@@ -86,3 +86,16 @@ def test_area_triangle_invalid_negative():
 def test_area_triangle_invalid_inequality():
     assert area_of_triangle(1, 2, 3) is None
 
+# Test Cases for Kunga's Function by Musfira
+
+from my_math import abs_val
+
+def test_abs_val_typical():
+    assert abs_val(-10) == 10
+    assert abs_val(7) == 7
+
+def test_abs_val_edge_zero():
+    assert abs_val(0) == 0
+
+def test_abs_val_large_number():
+    assert abs_val(-1000000) == 1000000
