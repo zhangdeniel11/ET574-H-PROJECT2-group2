@@ -101,21 +101,15 @@ def test_abs_val_large_number():
     assert abs_val(-1000000) == 1000000
 
 
-
-# Kunga test cases 
-
-def test_abs_positive():
-    assert abs_val(5) == 5
-
-def test_abs_negative():
-    assert abs_val(-5) == 5
-
-def test_abs_zero():
-    assert abs_val(0) == 0
+# Kunga test cases for Daniel's function
+def test_factorial_kunga():
+    assert factorial(4) == 24
+    assert factorial(1) == 1
 
 
-
-# Area of circle tests
-def test_area_of_circle_kunga():
-    assert area_of_circle(1) == 3.14
-    assert area_of_circle(2) == 12.56
+# Kunga test cases for Musfira's function
+def test_sqrt_kunga():
+    result = sqrt(16)
+    assert abs(result - 4) < 0.0001
+    assert sqrt(0) == 0
+    assert sqrt(-9) is None
