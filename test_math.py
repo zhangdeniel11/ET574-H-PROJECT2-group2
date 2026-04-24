@@ -43,9 +43,6 @@ def test_sqrt_invalid_deniel():
     assert sqrt(-4) is None
 
 
-#Deninel test case for Kunga ABS function
-def test_abs_val_normal():
-    assert abs_val(-5) == 5
 # Kunga test cases
 
 from my_math import abs_val, area_of_circle
@@ -57,6 +54,11 @@ def test_abs_val_kunga():
 def test_area_of_circle_kunga():
     assert area_of_circle(1) == 3.14
     assert area_of_circle(2) == 12.56
+
+
+#Deninel test case for Kunga ABS function
+def test_abs_val_normal():
+    assert abs_val(-5) == 5
 
 # Test cases by Musfira for Daniel's Original Function
 
