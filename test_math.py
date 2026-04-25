@@ -80,7 +80,7 @@ def test_triangle_area_invalid_negative():
 
 def test_area_triangle_typical():
     result = area_of_triangle(3, 4, 5)
-    assert abs(result - 6) < 0.0001   # Heron's formula → area = 6
+    assert abs(result - 6) < 0.0001   
 
 def test_area_triangle_edge():
     result = area_of_triangle(0.1, 0.1, 0.1)
