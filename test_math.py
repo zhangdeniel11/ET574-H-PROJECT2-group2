@@ -113,3 +113,19 @@ def test_sqrt_kunga():
     assert abs(result - 4) < 0.0001
     assert sqrt(0) == 0
     assert sqrt(-9) is None
+
+#Deniel test case for Deniel Area of triangle function
+def test_triangle_area_normal():
+    assert triangle_area(10, 5) == 25.0
+
+
+def test_triangle_area_edge():
+    assert triangle_area(0, 5) == 0.0
+
+
+def test_triangle_area_invalid():
+    try:
+        triangle_area(-3, 5)
+        assert False
+    except ValueError:
+        assert True
